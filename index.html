@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MR AI Assistant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h2>MR AI Assistant</h2>
+  <div class="status">● Online</div>
+</nav>
+
+<!-- MAIN -->
+<div class="container">
+
+  <!-- LEFT SIDE -->
+  <div class="left">
+    <h1>AI Anatomy Assistant</h1>
+    <p>Ask questions about human anatomy, procedures, and pharmacy topics.</p>
+    <button onclick="toggleChat()">Start Chat</button>
+  </div>
+
+  <!-- CHAT -->
+  <div class="chat-window" id="chatWindow">
+
+    <div class="chat-header">
+      AI Assistant
+      <span onclick="toggleChat()">✖</span>
+    </div>
+
+    <div class="chat-body" id="chatBox"></div>
+
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Type message...">
+      <button id="sendBtn">➤</button>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
